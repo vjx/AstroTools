@@ -1,9 +1,10 @@
 """
-    Author: João Ventura <flatangleweb@gmail.com>
+    Author: x 
+
+using flatlib from :João Ventura
     
     
-    This recipe shows sample code for handling 
-    aspects.
+    
 
 """
 import datetime
@@ -32,4 +33,3 @@ aspect = aspects.getAspect(sun, moon, const.MAJOR_ASPECTS)
 print(sun)
 print(moon)
 
-print(aspect)     # <Moon Sun 90 Applicative +00:24:30>
