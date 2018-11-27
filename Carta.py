@@ -12,6 +12,8 @@ from flatlib.chart import Chart
 from flatlib.datetime import Datetime
 from flatlib.geopos import GeoPos
 
+print ('Number of arguments:', len(sys.argv), 'arguments.')
+print ('Argument List:', str(sys.argv))
 
 # Build a chart for a date and location
 data = datetime.datetime.utcnow()
