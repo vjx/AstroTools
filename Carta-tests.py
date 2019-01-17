@@ -22,13 +22,18 @@ print()
 #chart = Chart(dados.date, dados.pos)
 chart = Chart(dados.date, dados.pos, IDs=const.LIST_OBJECTS)
 house1 = chart.get(const.HOUSE1)
-
+lista = ['SUN', 'MOON', 'MERCURY', 'VENUS', 'MARS', 'JUPITER','SATURN','URANUS','NEPTUNE']
 #print(dir(sun))
-for obj in chart.objects:
-         print(obj)
-         #print(chart.getObject(getattr(const, obj)))
-
-
+for obj in lista:
+         #print(obj)
+         print(chart.getObject(getattr(const, obj)))
+print()
+for obj in lista:
+         for plan in lista:
+            p1 = chart.get(getattr(const, obj))
+            p2 = chart.get(getattr(const, plan))
+            aspect = aspects.getAspect(p1, p2, const.MAJOR_ASPECTS)
+            print (aspect)
 
 print()
 print(house1)
